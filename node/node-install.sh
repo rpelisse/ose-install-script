@@ -39,6 +39,8 @@ if [ ! -e ${SCRIPT_CONFIG_FILE} ]; then
   echo ''
   usage
   exit 3
+else
+  source "${SCRIPT_CONFIG_FILE}"
 fi
 
 checkEnvVar() {
